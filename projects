@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Sean's Website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href='https://www.google.com/' target="_blank">Visit Google</a></li>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='education.html'>Education</a></li>
+        <li><a href='projects.html'>Projects</a></li>
+        <li><a href='resume.html'>Resume</a></li>
+        <li><a href='contact.html'>Contact Me</a></li>
+      </ul>
+    </nav>
+    <!-- <div align='center'> -->
+    <!-- 9/19 -->
+    <div class="imgcontainer">
+      <div id="homehero">
+        <div class="centered">
+          <h1>Sean Carver</h1>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="projects">
+        <h2>Here are some of the projects I have worked on: </h2>
+        <ul>
+          <li>Created form for mental health facilities</li>
+          <li>Created portfolio website</li>
+          <li>Created a CO2 powered car</li>
+        </ul>
+        <div id="threecontainer">
+          <section>
+            <h3>Created form for mental health facilities</h3>
+            <p>After working for a billing company for a couple of years and using their form to write down insurance
+              information for patients. I proposed the idea of creating a new form for the business. They told me to
+              give it a try and I created a more organized and user-friendly form. The business uses it and now other
+              facilities use the form as well! </p>
+          </section>
+          <section>
+            <h3>Created portfolio website</h3>
+            <p>During my time in CIS 425, we have spent many hours learning HTML and CSS to create a beautiful portfolio
+              website to display the hardwork we have spent on projects and our education.</p>
+          </section>
+          <section>
+            <h3>Created a CO2 powered car</h3>
+            <p>In a robotics class I took, my partner and I developed an aerodynamic CO2 powered car and competed in a
+              tournament against other schools.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer align='center'>
+      <p><i><small>Copyright &copy; Sean Carver<br>
+            <a href="scarver9@asu.edu" style="color: white;">scarver9@asu.edu</a>
+            <br>
+          </small></i></p>
+      <div class="socialMediaLinks">
+        <small><i><a href="https://twitter.com/Sean_Carver1" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009673110894" class="fa fa-facebook-f"
+              target="_blank"></a>
+            <a href="https://github.io" class="fa fa-brand fa-github" target="_blank"></a>
+            <a href="https://www.instagram.com/sean.ginger1/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sean-carver-2a30b5263/" class="fa fa-linkedin" target="_blank">
+            </a></i></small>
+      </div>
+
+    </footer>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
