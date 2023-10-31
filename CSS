@@ -1,0 +1,363 @@
+/* 9/19 */
+* { box-sizing: border-box; }
+
+/* Reset some default styles */
+/* 9/14 */
+body, h1 {
+/* h2,
+p,
+ul,
+li { */ 
+  margin: 0;
+  padding: 0;
+}
+
+body { background-color: #EAEAEA;
+       background-image: linear-gradient(to bottom, #FFFFFF, teal);
+       /* 9/21 */
+       background-repeat: no-repeat;
+       color: #555555; 
+	     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* modified 9/14 */
+#wrapper {         
+	/* background-color: #90C7E3;
+	background-image: linear-gradient(to bottom, #FFFFFF, #18bc9c);		    */
+	/* width: 80%; ==== 9/14 delete */
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+header {
+  background-color: #0e2e61;
+  color: #ffffff;
+  text-align: center;
+  /* 9/21 */
+  /* padding: 10px 0; */
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: block;
+  margin-left: 10px;
+  font-size: 24px;
+  text-align: right;
+  padding: 14px 16px;
+}
+
+.nav-menu {
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  position: relative;
+  z-index: 10000;
+  list-style: none;
+  padding: 0;
+}
+
+header h1 {
+  padding-top: 10px;
+}
+
+/* 9/21 */
+
+.logo {
+  display: none;
+}
+
+nav {
+  /* height: 50px; */
+  background-color: white;
+  text-align: center;
+}
+
+/* 9/14 */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  /* margin-right: 10px; */
+}
+
+nav li a {
+  display: inline-block;
+  color: maroon;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* 9/14 */
+#homehero {
+  height: 800px;
+  background-image: url(abed-ismail-_jhUrn9o8yM-unsplash.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+  /* 9/21 */
+  /* background-attachment: fixed; */
+}
+
+#projecthero {
+  height: 800px;
+  background-image: url(projects.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+#contacthero {
+  height: 800px;
+  background-image: url(mm_pfp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; 
+}
+
+/* Container holding the image and the text */
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white; 
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* 9/19 */
+.twocontainer {
+  float: left;
+  width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 10px; /* if you want space between the images */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; /* content after the the twocontainer will be displayed withno float */
+}
+
+/* 9/19 */
+/* a rem unit is always relative to the root CSS font size */
+section {
+  padding: 2rem;
+}
+
+/* 9/19 */
+section.evenrow {
+  color: white;
+  background-color: blue; 
+}
+
+/* #threecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section section{
+    margin-left: 1em;
+    margin-right: 1em;
+} */
+
+/* 9/19 */
+/* main {
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+
+table, th, td {
+  border: 1px solid black;
+}
+
+object {
+  height: 700px;
+  width: 80%;
+}
+
+#myPdf {
+  /* Add the following styles to center the PDF */
+  display: block;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background-color: teal;
+  color: white;
+}
+
+form {
+  margin-right:auto;
+  margin-left:auto;
+  max-width: 50em;
+  width: 80%;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 12em 1fr;
+}
+
+/* Add a new style for the button container */
+.button-container {
+  /* display: flex;
+  justify-content: space-between; /* Space buttons evenly */ 
+  grid-column: 2; /* Make the form container span both columns */
+  display: flex;
+  flex-direction: row;
+}
+
+/* 9/19 */
+/* Style for both buttons */
+form input[type="submit"],
+form input[type="reset"] {
+  width: 35%; /* Set the width of both buttons */
+  margin-right: 10px;
+}
+
+/* 9/21 */
+footer {
+  background-color: #0e2e61;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+.socialMediaLinks a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* 9/21 */
+@media screen and (min-width: 992px) {
+  /* 9/21 */
+  /* logo created by https://app.logo.com/editor/ideas?_gl=1%2a2y52qt%2a_gcl_au%2aMTEwMzM0ODg2My4xNjk1MjU0OTEy%2a_ga%2aMTc0Mjg4MzU3LjE2OTUyNTQ5MTI.%2a_ga_8Y782WJ29W%2aMTY5NTI1NDkxMS4xLjEuMTY5NTI1NDkxMS42MC4wLjA.  */
+  .logo {
+    display: block;
+    float: left; /* Float the logo to the left */
+    margin-left: 10px; /* Add some left margin for spacing */
+    width: 100px;
+    height: 60px;
+    object-fit: fill;
+  }
+  
+  #threecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  section section{
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  
+  nav {
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .hero {grid-area: hero; }
+  header {grid-area: header;}
+  nav {grid-area: nav; }
+  main {grid-area: main; }
+  footer {grid-area: footer; }
+
+  #wrapper {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-areas:
+        "header header"
+        "nav hero"
+        "nav main"
+        "nav footer";
+  }
+
+  /* Add some basic styling to form elements */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .checkbox-container {
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button[type="submit"],
+  button[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover,
+  button[type="reset"]:hover {
+    background-color: #45a049;
+  }
+
+}
